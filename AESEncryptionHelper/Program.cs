@@ -20,8 +20,10 @@ namespace AESEncryptionHelper
 
                 string original = "Here is some data to encrypt!";
                 
-                RijndaelManaged myRijndael = new RijndaelManaged();
-                
+                //new values for key and iv should be taken from this class
+                //RijndaelManaged myRijndael = new RijndaelManaged();
+                //myRijndael.Key
+                //myRijndael.IV
                 
                 byte[] encrypted = EncryptionManager.EncryptStringToBytes(original, AES_KEY, AES_IV);
                 string roundtrip = EncryptionManager.DecryptStringFromBytes(encrypted, AES_KEY, AES_IV);
