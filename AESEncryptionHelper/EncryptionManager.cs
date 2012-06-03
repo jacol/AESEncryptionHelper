@@ -7,6 +7,10 @@ using System.Security.Cryptography;
 
 namespace AESEncryptionHelper
 {
+    /// <summary>
+    /// Most of this class was taken from:
+    /// http://stackoverflow.com/questions/273452/using-aes-encryption-in-c-sharp
+    /// </summary>
     public class EncryptionManager
     {
         public static string EncryptString(string plainText, byte [] Key, byte [] IV)
